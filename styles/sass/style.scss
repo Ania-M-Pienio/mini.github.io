@@ -1,0 +1,34 @@
+@import "partials/settings";
+@import "partials/colors";
+@import "partials/nav";
+@import "partials/typography";
+@import "partials/footer";
+@import "pages/home";
+
+body, body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+
+.container-1500 {
+  @include wrapper(1500px);
+}
+
+section {
+  margin: 15px 0;
+}
+
+a {
+  color: inherit !important;
+  &:hover {
+    text-decoration: none !important;
+  }
+  span {
+    color: inherit !important;
+  }
+}
+

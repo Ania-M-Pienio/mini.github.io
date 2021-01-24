@@ -1,0 +1,36 @@
+$tint: whitesmoke;
+$gray: lightgray;
+$dark: rgb(87, 87, 87);
+
+
+.bg {
+  &--tint {
+    background-color: $tint;
+  }
+  &--dark {
+    background-color: $dark;
+  }
+  &--white {
+    background-color: white;
+  }
+  &--black {
+    background-color: black;
+  }
+}
+.text {
+  &--tint {
+    color: $tint;
+  }
+  &--gray {
+    color: $gray;
+  }
+  &--dark {
+    color: $dark;
+  }
+  &--white {
+    color: white;
+  }
+  &--black {
+    color: black;
+  }
+}

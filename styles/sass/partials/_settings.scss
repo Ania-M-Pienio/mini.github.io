@@ -1,0 +1,13 @@
+$lg: 992px;
+$md: 768px;
+
+@mixin media-query($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin wrapper($size) {
+  max-width: $size;
+  margin: 0 auto;
+}

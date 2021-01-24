@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.bg--tint {
+  background-color: whitesmoke;
+}
+
+.bg--dark {
+  background-color: #575757;
+}
+
+.bg--white {
+  background-color: white;
+}
+
+.bg--black {
+  background-color: black;
+}
+
+.text--tint {
+  color: whitesmoke;
+}
+
+.text--gray {
+  color: lightgray;
+}
+
+.text--dark {
+  color: #575757;
+}
+
+.text--white {
+  color: white;
+}
+
+.text--black {
+  color: black;
+}
+
+.nav-menu {
+  font-size: 1.5rem;
+}
+
+.nav-menu .nav-item {
+  position: relative;
+}
+
+.nav-menu .nav-item span {
+  position: relative;
+  z-index: 3;
+}
+
+.nav-menu .nav-item:before {
+  position: absolute;
+  content: "";
+  background-color: whitesmoke;
+  width: 0%;
+  height: 0;
+  left: 0;
+  top: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.nav-menu .nav-item:hover:before {
+  width: 100%;
+  height: 2px;
+}
+
+.logo img {
+  width: 200px;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 67.5%;
+}
+
+h1 {
+  font-size: 6rem !important;
+}
+
+h2 {
+  font-size: 3rem !important;
+}
+
+h3 {
+  font-size: 2rem !important;
+}
+
+.hero {
+  max-height: 900px;
+  overflow-y: hidden;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.gallery-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
+      grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
+  row-gap: 15px;
+  margin-bottom: 0;
+}
+
+.gallery-grid .gallery-item {
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+@media (min-width: 768px) {
+  .gallery-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    -webkit-column-gap: 15px;
+            column-gap: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .gallery-grid {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+#item-one {
+  grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+  #item-one {
+    grid-column: span 2;
+  }
+}
+
+#item-one .item-bg {
+  background: url(../assets/cars/car1.png);
+}
+
+#item-two {
+  background-color: #e8e8e8;
+}
+
+#item-two .item-bg img {
+  width: 20%;
+}
+
+@media (min-width: 768px) {
+  #item-two .item-bg img {
+    width: 120px;
+  }
+}
+
+#item-four {
+  background-color: #e8e8e8;
+}
+
+#item-three .item-bg {
+  background: url(../assets/cars/ornament.png);
+  background-size: cover !important;
+  background-position: right bottom;
+  opacity: 0.9;
+}
+
+#item-five {
+  grid-column: span 1;
+}
+
+@media (min-width: 992px) {
+  #item-five {
+    grid-column: span 2;
+  }
+}
+
+#item-five .item-bg {
+  background: url(../assets/cars/car3.png);
+}
+
+.item-bg {
+  width: 100%;
+  height: 100%;
+  background-size: contain !important;
+  background-position: bottom !important;
+  background-repeat: no-repeat !important;
+}
+
+#item-six {
+  grid-column: span 1;
+  background-color: #e8e8e8;
+}
+
+@media (min-width: 768px) {
+  #item-six {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 992px) {
+  #item-six {
+    grid-column: span 1;
+  }
+}
+
+#item-six .item-bg img {
+  width: 40%;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  #item-six .item-bg img {
+    width: 80%;
+  }
+}
+
+.lifestyle p {
+  font-size: 1.3rem;
+}
+
+.lifestyle .logo {
+  width: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
+  bottom: 20px;
+  right: 40px;
+}
+
+body, body * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container-1500 {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+section {
+  margin: 15px 0;
+}
+
+a {
+  color: inherit !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+a span {
+  color: inherit !important;
+}
